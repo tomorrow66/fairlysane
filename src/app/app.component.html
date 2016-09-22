@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<!--<section class="canvas animated fadeIn" [ngStyle]="{'background-image': 'url(' + bgImg + ')'}">-->
+<section class="canvas animated fadeIn">
+  <video playsinline autoplay muted loop [poster]="bgImg" id="bgvid">
+    <source [src]="bgVid" type="video/mp4">
+  </video>
+  <div class="landing">
+    <div class="branding">
+      <img class="logo" [src]=logo.svg style="height:100%;" />
+    </div>
+    <div class="intro">
+      <p>
+        In a world where women are superior to men, an advertising agency is in its beginning phases as a company. Every action taken is crucial to the companies’ success. The agency specializes in ads that objectify men in order to gain viewership.
+      </p>
+    </div>
+    <fs-subscribe></fs-subscribe>
+  </div>
+</section>
