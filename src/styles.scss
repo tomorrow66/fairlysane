@@ -41,11 +41,11 @@ summary {
 }
 
 article {
-  margin-bottom: var(--md-pad);
+  margin-bottom: 1rem;
 }
 
 aside {
-  margin-bottom: var(--md-pad);
+  margin-bottom: 1rem;
 }
 
 section {
@@ -53,22 +53,20 @@ section {
 }
 
 footer {
-  border-top: .1rem solid var(--trans-light);
   max-width: 100%;
-  padding: 1rem 0;
   text-align: center;
 }
 
 hr {
-  border-top: .1rem solid var(--trans-light);
+  border-top: .1rem solid #aaa;
   display: block;
-  margin-bottom: var(--md-pad);
+  margin-bottom: 1rem;
   width: 100%;
 
 }
 
 a {
-  color: var(--brandYellow);
+  color: rgb(242, 212, 59);
   text-decoration: none;
 }
 
@@ -89,4 +87,8 @@ button {
 
 ::selection {
   background: rgba(200,200,255,.1);
+}
+
+.tptv-red {
+  color: #c0392b;
 }
