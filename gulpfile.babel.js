@@ -56,6 +56,12 @@ gulp.task('images', () =>
     .pipe($.size({title: 'images'}))
 );
 
+gulp.task('media', () =>
+  gulp.src('app/media/**/*')
+    .pipe(gulp.dest('dist/media'))
+    .pipe($.size({title: 'media'}))
+);
+
 // Copy all files at the root level (app)
 gulp.task('copy', () =>
   gulp.src([
@@ -195,7 +201,7 @@ gulp.task('serve:dist', ['default'], () =>
 gulp.task('default', ['clean'], cb =>
   runSequence(
     'styles',
-    ['lint', 'html', 'scripts', 'images', 'copy'],
+    ['lint', 'html', 'scripts', 'images', 'media', 'copy'],
     'generate-service-worker',
     cb
   )
