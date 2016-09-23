@@ -1,0 +1,255 @@
+@import 'normalize.scss';
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  font-family: 'Dosis', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+main,
+header,
+footer,
+article,
+section,
+aside,
+details,
+summary {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+}
+
+footer {
+  max-width: 100%;
+  text-align: center;
+}
+
+hr {
+  border-top: .1rem solid #aaa;
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+
+}
+
+a {
+  color: rgb(242, 212, 59);
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: baseline;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+::focus {
+  outline: none;
+}
+
+::selection {
+  background: rgba(200,200,255,.1);
+}
+
+.tptv-red {
+  color: #c0392b;
+}
+
+// Home Styles
+.canvas {
+  display: flex;
+  color: #fff;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:before {
+    content: '';
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(/images/bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.landing {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.intro {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.branding {
+  width: 80%;
+  max-width: 400px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.presentedby {
+  font-size: 1.65rem;
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+// Form Styles
+#mc_embed_signup {
+  display: flex;
+  margin: 50px auto 50px;
+  width:400px;
+}
+input[type="email"] {
+  appearance: none;
+  color: #fff;
+  width:380px;
+  height:75px;
+  font-size:3em;
+  background:transparent;
+  border:none;
+  border-bottom:solid 4px #fff;
+  box-shadow: none;
+  text-align:center;
+  transition: border-color 0.6s ease;
+}
+
+::-webkit-input-placeholder {
+  color: rgb(242, 212, 59);
+  opacity: 1;
+  transition: color 0.5s ease;
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+  transition: color 0.5s ease;
+}
+
+
+input[type="email"]:focus {
+  background:transparent;
+  color: #fff;
+  outline:none;
+  border:none;
+  border-bottom:solid 4px rgb(242, 212, 59);
+  box-shadow: none;
+  transition: border-color 1s ease;
+}
+
+input[type="submit"] {
+  appearance: none;
+  width:100%;
+  height:60px;
+  font-size:1.65em;
+  background:transparent;
+  color: #fff;
+  border:none;
+  text-align:center;
+  letter-spacing:0.15em;
+  text-transform:uppercase;
+  transition: color 0.5s ease;
+  outline:none;
+  border:none;
+}
+
+input[type="submit"]:hover {
+  color: #fff;
+  cursor:pointer;
+  transition: color 0.5s ease;
+}
+
+button, .button {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: 0.75rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.8125rem;
+  padding-left: 1.5rem;
+  font-size: 1.6rem;
+  background-color: #2ba6cb;
+  border-color: #2285a1;
+  color: #ffffff;
+  -webkit-transition: background-color 300ms ease-out;
+  -moz-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+  padding-top: 0.8125rem;
+  padding-bottom: 0.75rem;
+  -webkit-appearance: none;
+  border: none;
+  font-weight: bold !important; }
+
+button:hover, button:focus, .button:hover, .button:focus {
+  background-color: rgb(242, 212, 59);
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+  color: #ffffff;
+}
+
+
