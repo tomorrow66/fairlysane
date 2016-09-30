@@ -87,7 +87,7 @@ button {
   // flex-direction: column;
   // justify-content: center;
   // align-items: center;
-  margin-top: 50px;
+  // margin-top: 50px;
 
   &:before {
     content: '';
@@ -168,7 +168,7 @@ video#bgvid {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   z-index: 1;
 }
@@ -252,8 +252,8 @@ button, .button {
   padding-bottom: 0.8125rem;
   padding-left: 1.5rem;
   font-size: 1.6rem;
-  background-color: #2ba6cb;
-  border-color: #2285a1;
+  background-color: rgb(242, 212, 59);
+  border-color: rgb(241, 210, 55);
   color: #ffffff;
   -webkit-transition: background-color 300ms ease-out;
   -moz-transition: background-color 300ms ease-out;
@@ -262,7 +262,8 @@ button, .button {
   padding-bottom: 0.75rem;
   -webkit-appearance: none;
   border: none;
-  font-weight: bold !important; }
+  font-weight: bold !important;
+}
 
 button:hover, button:focus, .button:hover, .button:focus {
   background-color: rgb(242, 212, 59);
